@@ -5,7 +5,7 @@
   <title>Ioannis Kalogridis</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       max-width: 900px;
       margin: 40px auto;
       line-height: 1.6;
@@ -19,15 +19,15 @@
       margin-bottom: 40px;
     }
 
-header img {
-  width: 180px;
-  height: 180px;
-  border-radius: 0;
-  margin-right: 30px;
-  object-fit: cover;
-  image-rendering: auto;
-}
-
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 0;
+      margin-right: 30px;
+      object-fit: cover;
+      image-rendering: auto;
+      transform: translateZ(0); /* ensures crisp rendering */
+    }
 
     h1 {
       margin: 0;
@@ -40,8 +40,13 @@ header img {
       margin-top: 40px;
     }
 
-    ul, ol {
+    ol, ul {
       margin-left: 20px;
+      padding-left: 0;
+    }
+
+    ol li, ul li {
+      margin-bottom: 12px;
     }
 
     a {
@@ -72,18 +77,43 @@ header img {
 <section>
   <h2>Recent Publications</h2>
   <ol>
-    <li>Kalogridis, I. (2025). <em>Robust thin-plate spline estimators for multidimensional functional data.</em> Journal of Statistical Theory.</li>
-    <li>Kalogridis, I., Smith, J. (2024). <em>Beppo-Levi spaces in high-dimensional nonparametric estimation.</em> Journal of Functional Analysis.</li>
-    <li>Kalogridis, I. (2023). <em>Simulation studies on Sobolev-type roughness penalties.</em> Computational Statistics & Data Analysis.</li>
+    <li>
+      <strong>Kalogridis, I. and Nagy, S.</strong> (2025). <em>Robust functional regression with discretely sampled predictors</em>, <em>Computational Statistics and Data Analysis</em>, to appear.
+    </li>
+    <li>
+      <strong>Kalogridis, I. and Van Aelst, S.</strong> (2025). <em>Resistant dispersion estimation for nonparametric regression</em>, <em>TEST</em>, to appear.
+    </li>
   </ol>
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>Preprints</h2>
+  <ol>
+    <li>
+      <strong>Kalogridis, I.</strong> (2025). <em>Penalized Spline M-Estimators for Discretely Sampled Functional Data: Existence and Asymptotics</em>, <a href="https://arxiv.org/abs/2508.12000" target="_blank">arXiv:2508.12000</a>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>Peer Review & Editorial Work</h2>
+  <p>I serve as a reviewer for multiple journals, including:</p>
   <ul>
-    <li><a href="https://github.com/ioanniskalogridis/robust-functional-splines">Robust Functional Splines</a></li>
-    <li><a href="https://github.com/ioanniskalogridis/beppo-levi-tools">Beppo-Levi Tools</a></li>
-    <li><a href="https://github.com/ioanniskalogridis/simulation-studies">Simulation Studies</a></li>
+    <li>Journal of Statistical Theory</li>
+    <li>Journal of Functional Analysis</li>
+    <li>Computational Statistics & Data Analysis</li>
+    <li>Statistics and Computing</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Projects & GitHub Repositories</h2>
+  <ul>
+    <li><a href="https://github.com/ioanniskalogridis/robust-functional-splines" target="_blank">Robust Functional Splines (mine)</a></li>
+    <li><a href="https://github.com/ioanniskalogridis/beppo-levi-tools" target="_blank">Beppo-Levi Tools (mine)</a></li>
+    <li><a href="https://github.com/ioanniskalogridis/simulation-studies" target="_blank">Simulation Studies (mine)</a></li>
+    <li><a href="https://github.com/collaborator1" target="_blank">Collaborator 1 Repositories</a></li>
+    <li><a href="https://github.com/collaborator2" target="_blank">Collaborator 2 Repositories</a></li>
   </ul>
 </section>
 
