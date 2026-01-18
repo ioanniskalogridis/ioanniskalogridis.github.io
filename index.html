@@ -11,16 +11,16 @@
       line-height: 1.6;
       color: #111;
       padding: 0 20px;
+      background-color: #fff;
     }
 
-section {
-  margin-bottom: 40px;
-}
-    
     header {
       display: flex;
       align-items: center;
       margin-bottom: 40px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
     }
 
     header img {
@@ -31,11 +31,16 @@ section {
       object-fit: cover;
       image-rendering: auto;
       transform: translateZ(0); /* ensures crisp rendering */
+      border: 2px solid #ddd;
     }
 
-    h1 {
+    header h1 {
       margin: 0;
       font-size: 2em;
+    }
+
+    header p {
+      margin: 5px 0;
     }
 
     h2 {
@@ -51,6 +56,7 @@ section {
 
     ol li, ul li {
       margin-bottom: 12px;
+      font-size: 0.95em;
     }
 
     a {
@@ -63,12 +69,13 @@ section {
     }
 
     section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    /* Optional: slightly smaller font for lists for cleaner look */
-    ol li, ul li {
-      font-size: 0.95em;
+    /* Research interests list styling */
+    .research-interests {
+      list-style-type: disc;
+      margin-left: 20px;
     }
   </style>
 </head>
@@ -78,9 +85,14 @@ section {
   <img src="assets/profile.jpg" alt="Ioannis Kalogridis">
   <div>
     <h1>Ioannis Kalogridis</h1>
-    <p> Welcome to my webpage! I am a Lecturer in Statistics and Data Analytics at the School of Mathematics and Statistics at the University of Glasgow.</p>
-    <p> I work on functional data analysis, nonparametrics, and robust statistics. </p>
-    <p> I obtained my PhD in 2020 from the Department of Mathematics, KU Leuven, Belgium under the supervision of Prof. Stefan Van Aelst.</p>
+    <p>Welcome to my webpage! I am a Lecturer in Statistics and Data Analytics at the School of Mathematics and Statistics, University of Glasgow.</p>
+    <p>I work on functional data analysis, nonparametrics, and robust statistics. I obtained my PhD in 2020 from the Department of Mathematics, KU Leuven, Belgium under the supervision of Prof. Stefan Van Aelst.</p>
+    <p><em>My main research interests include:</em></p>
+    <ul class="research-interests">
+      <li>Functional data analysis</li>
+      <li>Robust statistics</li>
+      <li>Nonparametric methods</li>
+    </ul>
   </div>
 </header>
 
@@ -122,15 +134,4 @@ section {
   <h2>Selected GitHub Repositories</h2>
   <ul>
     <li><a href="https://github.com/ioanniskalogridis/Robust-Functional-Location-Estimation" target="_blank">Penalized Spline M-Estimators for Discretely Sampled Functional Data</a></li>
-    <li><a href="https://github.com/NagyStanislav/RobustSpline" target="_blank">Thin-plate splines for functional regression and location estimation (Stanislav Nagy)</a></li>
-    <li><a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank">Robust nonparametric scale estimation</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:ioannis.kalogridis@glasgow.ac.uk">ioannis.kalogridis@glasgow.ac.uk</a></p>
-</section>
-
-</body>
-</html>
+    <li><a href="https://github.co
