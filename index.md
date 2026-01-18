@@ -6,7 +6,7 @@ title: Ioannis Kalogridis
 
 Lecturer in Statistics, University of Glasgow.  
 
-![Ioannis Kalogridis](assets/myself.jpeg){: width="150px" style="border-radius: 50%;"}
+![Ioannis Kalogridis](assets/Myself.jpeg){: width="150px" style="border-radius: 50%;"}
 
 Research interests: functional data analysis, robust statistics, thin‑plate splines.
 
