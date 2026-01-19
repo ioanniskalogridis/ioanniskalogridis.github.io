@@ -18,7 +18,7 @@
 
   <meta name="author" content="Ioannis Kalogridis">
 
-  <!-- Structured data (Schema.org Person) -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,18 +45,24 @@
                    Roboto, Helvetica, Arial, sans-serif;
       max-width: 900px;
       margin: 40px auto;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #111;
       padding: 0 20px;
       background-color: #fff;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     header {
       display: flex;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       background-color: #f8f9fa;
-      padding: 20px;
+      padding: 22px;
       border-radius: 8px;
     }
 
@@ -66,6 +72,11 @@
       margin-right: 30px;
       object-fit: cover;
       border: 2px solid #ddd;
+      transition: box-shadow 0.25s ease;
+    }
+
+    header img:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
     }
 
     header h1 {
@@ -78,13 +89,14 @@
     }
 
     section {
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
 
     h2 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 40px;
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 6px;
+      margin-top: 48px;
+      font-weight: 500;
     }
 
     ol, ul {
@@ -93,22 +105,25 @@
     }
 
     ol li, ul li {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-size: 0.95em;
     }
 
     a {
       color: #0366d6;
       text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
     }
 
     a:hover {
-      text-decoration: underline;
+      border-bottom-color: currentColor;
     }
 
     .paper-links {
       white-space: nowrap;
       font-size: 0.9em;
+      margin-left: 4px;
     }
   </style>
 </head>
@@ -120,8 +135,8 @@
   <div>
     <h1>Ioannis Kalogridis</h1>
     <p>
-      Lecturer in Statistics and Data Analytics,
-      School of Mathematics and Statistics,
+      Lecturer in Statistics and Data Analytics,<br>
+      School of Mathematics and Statistics,<br>
       University of Glasgow
     </p>
     <p>
