@@ -57,6 +57,17 @@
       to { opacity: 1; }
     }
 
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     header {
       display: flex;
       align-items: center;
@@ -82,14 +93,17 @@
     header h1 {
       margin: 0;
       font-size: 2em;
+      letter-spacing: 0.2px;
     }
 
     header p {
       margin: 6px 0;
+      max-width: 560px;
     }
 
     section {
       margin-bottom: 48px;
+      animation: fadeUp 0.4s ease-out;
     }
 
     h2 {
@@ -107,23 +121,30 @@
     ol li, ul li {
       margin-bottom: 14px;
       font-size: 0.95em;
+      line-height: 1.55;
     }
 
     a {
       color: #0366d6;
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: border-color 0.2s ease;
+      transition: border-color 0.2s ease, opacity 0.2s ease;
     }
 
     a:hover {
       border-bottom-color: currentColor;
+      opacity: 0.85;
     }
 
     .paper-links {
       white-space: nowrap;
       font-size: 0.9em;
       margin-left: 4px;
+      color: #555;
+    }
+
+    .paper-links a {
+      font-weight: 500;
     }
   </style>
 </head>
@@ -131,7 +152,8 @@
 <body>
 
 <header>
-  <img src="assets/profile.jpg" alt="Ioannis Kalogridis">
+  <img src="assets/profile.jpg"
+       alt="Ioannis Kalogridis, Lecturer in Statistics and Data Analytics at the University of Glasgow">
   <div>
     <h1>Ioannis Kalogridis</h1>
     <p>
