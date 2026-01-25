@@ -43,6 +43,24 @@
       --text: #111;
       --muted: #555;
     }
+    nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+@media (prefers-color-scheme: dark) {
+  nav {
+    background: #0f1117;
+    border-bottom-color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+}
+
+    
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       max-width: 920px;
