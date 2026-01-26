@@ -261,10 +261,18 @@ header img:hover {
 </section>
 
 <footer>
-  <p>
+  <!-- <p>
     <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer">University of Glasgow</a> •
     Last updated: January 2026
+  </p> -->
+  <p>
+   <script>
+  document.querySelector('footer p').innerHTML += ` • <span id="last-updated"></span>`;
+  const now = new Date();
+  document.getElementById('last-updated').textContent = now.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+</script>
   </p>
+  
 </footer>
 
 </body>
