@@ -61,55 +61,47 @@
     }
     @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
     @keyframes fadeUp { from {opacity:0; transform:translateY(6px);} to {opacity:1; transform:translateY(0);} }
-header {
-  display: flex;
-  align-items: flex-start;       /* better vertical alignment when text is shorter */
-  gap: 32px;
-  margin-bottom: 40px;           /* slightly less bottom margin */
-  background: var(--light-bg);
-  padding: 28px;
-  border-radius: 10px;
-}
-
-header div {
-  flex: 1;                       /* lets text take available space */
-}
-
-header h1 {
-  margin: 0 0 4px 0;             /* tighter spacing below name */
-  font-size: 2.4em;
-  color: var(--glasgow-blue-dk);
-}
-
-header p:first-of-type {
-  font-size: 1.15em;
-  margin: 0 0 10px 0;
-  font-weight: 500;
-}
-
-header p:nth-of-type(2) {
-  margin: 0 0 12px 0;
-  line-height: 1.5;
-}
-header img {
-  width: 200px;                    /* smaller to reduce crop pressure and feel less "floating" */
-  height: 200px;
-  object-fit: contain;             /* shows full photo without forced crop */
-  object-position: center top;     /* prioritizes keeping top of head visible */
-  border: 3px solid #e0e0e0;
-  border-radius: 12px;             /* subtle rounded corners — not full circle */
-  background: var(--light-bg);     /* fill any letterbox gaps with light gray-blue */
-  padding: 8px;                    /* internal padding so it doesn't touch edges */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* gentle drop shadow instead of float */
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
-}
-
-header img:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12); /* stronger shadow on hover — no lift/translate */
-  /* Remove transform: translateY(-3px); to eliminate floating */
-}
-    header img:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.14); transform: translateY(-3px); }
-    h1 { margin: 0; font-size: 2.4em; color: var(--glasgow-blue-dk); }
+    header {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      margin-bottom: 40px;
+      background: var(--light-bg);
+      padding: 28px;
+      border-radius: 10px;
+    }
+    header div {
+      flex: 1;
+    }
+    header h1 {
+      margin: 0 0 4px 0;
+      font-size: 2.4em;
+      color: var(--glasgow-blue-dk);
+    }
+    header p:first-of-type {
+      font-size: 1.15em;
+      margin: 0 0 10px 0;
+      font-weight: 500;
+    }
+    header p:nth-of-type(2) {
+      margin: 0 0 12px 0;
+      line-height: 1.5;
+    }
+    header img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      object-position: center top;
+      border: 3px solid #e0e0e0;
+      border-radius: 12px;
+      background: var(--light-bg);
+      padding: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease;
+    }
+    header img:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
     h2 {
       color: var(--glasgow-blue-dk);
       border-bottom: 2px solid #e0e0e0;
@@ -138,28 +130,62 @@ header img:hover {
       font-size: 1.05em;
       font-weight: 500;
     }
-    nav a:hover, nav a:focus { border-bottom-color: var(--glasgow-blue); color: var(--glasgow-blue-dk); }
-    a { color: var(--glasgow-blue); text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s; }
-    a:hover { border-bottom-color: currentColor; opacity: 0.9; }
-    section { margin-bottom: 48px; animation: fadeUp 0.4s ease-out; }
-    ol, ul { margin-left: 20px; padding-left: 0; }
-    li { margin-bottom: 14px; font-size: 0.97em; line-height: 1.6; }
-    .paper-links { white-space: nowrap; font-size: 0.92em; margin-left: 6px; color: var(--muted); }
-    .paper-links a { font-weight: 550; color: #444; }
+    nav a:hover, nav a:focus {
+      border-bottom-color: var(--glasgow-blue);
+      color: var(--glasgow-blue-dk);
+    }
+    a {
+      color: var(--glasgow-blue);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    a:hover {
+      border-bottom-color: currentColor;
+      opacity: 0.9;
+    }
+    section {
+      margin-bottom: 48px;
+      animation: fadeUp 0.4s ease-out;
+    }
+    ol, ul {
+      margin-left: 20px;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 14px;
+      font-size: 0.97em;
+      line-height: 1.6;
+    }
+    .paper-links {
+      white-space: nowrap;
+      font-size: 0.92em;
+      margin-left: 6px;
+      color: var(--muted);
+    }
+    .paper-links a {
+      font-weight: 550;
+      color: #444;
+    }
     .back-to-top {
       text-align: right;
       font-size: 0.9em;
       margin-top: 20px;
       color: var(--muted);
     }
-    .back-to-top a:hover { color: var(--glasgow-blue-dk); }
+    .back-to-top a:hover {
+      color: var(--glasgow-blue-dk);
+    }
     footer {
       text-align: center;
       margin-top: 80px;
       padding-top: 30px;
-      border-top: 1px solid #ddd;
+      border-top: 2px solid #e0e0e0; /* stronger separator */
       color: #555;
       font-size: 0.9em;
+    }
+    footer p {
+      margin: 0;
     }
     @media (prefers-color-scheme: dark) {
       body { background: #0f1117; color: #e0e0e0; }
@@ -170,25 +196,19 @@ header img:hover {
       nav a { color: #79c0ff; }
       nav a:hover { color: #a5d6ff; border-bottom-color: #79c0ff; }
       .paper-links a { color: #aaa; }
+      #research { background: #161b22; }
     }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
     @media (max-width: 768px) {
       header { flex-direction: column; text-align: center; gap: 20px; }
       nav a { margin: 0 12px; font-size: 1em; }
     }
-
-#research {
-  background: var(--light-bg);
-  padding: 24px;
-  border-radius: 8px;
-  margin-bottom: 56px;
-}
-@media (prefers-color-scheme: dark) {
-  #research {
-    background: #161b22;
-  }
-}
-
+    #research {
+      background: var(--light-bg);
+      padding: 24px;
+      border-radius: 8px;
+      margin-bottom: 56px;
+    }
   </style>
 </head>
 <body>
@@ -221,28 +241,25 @@ header img:hover {
 
 <section id="research">
   <h2>Research Interests</h2>
-  <ul style="columns: 2; column-gap: 40px; list-style: none; padding-left: 0; margin: 0;">
+  <ul style="columns: 2; column-gap: 40px; padding-left: 20px; margin: 0;">
     <li>Functional data analysis</li>
     <li>Nonparametric and semi-parametric methods</li>
     <li>Robust statistics</li>
-    <li>Computational statistics </li>
+    <li>Computational statistics</li>
   </ul>
   <div class="back-to-top"><a href="#">↑ Back to top</a></div>
 </section>
 
-
-
-
 <section id="publications">
   <h2>Publications</h2>
   <ol>
-    <li>Kalogridis, I. and Nagy, S. (2025). <strong>Robust functional regression with discretely sampled predictors</strong>. <em>Computational Statistics & Data Analysis</em>, to appear. DOI: <a href="https://doi.org/10.1016/j.csda.2025.108308" target="_blank" rel="noopener noreferrer">10.1016/j.csda.2025.108308</a>
+    <li>Kalogridis, I. and Nagy, S. (2025). <strong>Robust functional regression with discretely sampled predictors</strong>. <em>Computational Statistics & Data Analysis</em>, to appear. DOI: <a href="https://doi.org/10.1016/j.csda.2025.108308" target="_blank" rel="noopener noreferrer" title="DOI: 10.1016/j.csda.2025.108308">10.1016/j.csda.2025.108308</a>
       <span class="paper-links">[<a href="https://www.sciencedirect.com/science/article/pii/S0167947325001847" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">code</a>]</span>
     </li>
-    <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Robust penalized splines for location estimation from discretely sampled functional data</strong>. In <em>International Workshop on Functional and Operatorial Statistics (IWFOS 2025)</em>, pp. 267–275. DOI: <a href="https://doi.org/10.1007/978-3-031-92383-8_33" target="_blank" rel="noopener noreferrer">10.1007/978-3-031-92383-8_33</a>
+    <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Robust penalized splines for location estimation from discretely sampled functional data</strong>. In <em>International Workshop on Functional and Operatorial Statistics (IWFOS 2025)</em>, pp. 267–275. DOI: <a href="https://doi.org/10.1007/978-3-031-92383-8_33" target="_blank" rel="noopener noreferrer" title="DOI: 10.1007/978-3-031-92383-8_33">10.1007/978-3-031-92383-8_33</a>
       <span class="paper-links">[<a href="https://link.springer.com/book/10.1007/978-3-031-92383-8" target="_blank" rel="noopener noreferrer">paper</a>]</span>
     </li>
-    <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Resistant dispersion estimation for nonparametric regression</strong>. <em>TEST</em>, 34, 660–690. DOI: <a href="https://doi.org/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer">10.1007/s11749-025-00974-w</a>
+    <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Resistant dispersion estimation for nonparametric regression</strong>. <em>TEST</em>, 34, 660–690. DOI: <a href="https://doi.org/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer" title="DOI: 10.1007/s11749-025-00974-w">10.1007/s11749-025-00974-w</a>
       <span class="paper-links">[<a href="https://link.springer.com/article/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank" rel="noopener noreferrer">code</a>]</span>
     </li>
   </ol>
@@ -300,9 +317,9 @@ header img:hover {
   <h2>Contact</h2>
   <p>Email: <a href="mailto:ioannis.kalogridis@glasgow.ac.uk">ioannis.kalogridis@glasgow.ac.uk</a></p>
   <p>
-    <a href="https://scholar.google.com/citations?user=A4KjmhkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
-    <a href="https://orcid.org/0000-0002-8581-6564" target="_blank" rel="noopener noreferrer">ORCID</a> |
-    <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=319767" target="_blank" rel="noopener noreferrer">Mathematics Genealogy</a>
+    <a href="https://scholar.google.com/citations?user=A4KjmhkAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar profile">Google Scholar</a> |
+    <a href="https://orcid.org/0000-0002-8581-6564" target="_blank" rel="noopener noreferrer" title="ORCID iD">ORCID</a> |
+    <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=319767" target="_blank" rel="noopener noreferrer" title="Mathematics Genealogy Project">Mathematics Genealogy</a>
   </p>
   <div class="back-to-top"><a href="#">↑ Back to top</a></div>
 </section>
