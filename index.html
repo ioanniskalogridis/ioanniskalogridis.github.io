@@ -70,14 +70,17 @@
       padding: 28px;
       border-radius: 10px;
     }
-    header img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border: 3px solid #e0e0e0;
-      border-radius: 8px;
-      transition: box-shadow 0.3s ease, transform 0.25s ease;
-    }
+header img {
+  width: 200px;                /* slightly smaller to reduce aggressive cropping */
+  height: 200px;
+  object-fit: contain;         /* show full image without forced crop — adds letterboxing if needed */
+  object-position: center top; /* prioritize keeping the top of the head visible */
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;          /* make it fully circular for a cleaner profile look */
+  background: #f8f9fa;         /* subtle background fill if contain leaves gaps */
+  padding: 8px;                /* extra breathing room inside border */
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+}
     header img:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.14); transform: translateY(-3px); }
     h1 { margin: 0; font-size: 2.4em; color: var(--glasgow-blue-dk); }
     h2 {
@@ -150,7 +153,7 @@
 </head>
 <body>
 <header>
-  <img src="assets/profile.jpg" alt="Ioannis Kalogridis, Lecturer in Statistics and Data Analytics at the University of Glasgow" loading="lazy">
+  <img src="assets/profile_new.jpg" alt="Ioannis Kalogridis, Lecturer in Statistics and Data Analytics at the University of Glasgow" loading="lazy">
   <div>
     <h1>Ioannis Kalogridis</h1>
     <p style="font-size:1.1em; margin:8px 0 16px 0;">
