@@ -71,15 +71,21 @@
       border-radius: 10px;
     }
 header img {
-  width: 200px;                /* slightly smaller to reduce aggressive cropping */
+  width: 200px;                    /* smaller to reduce crop pressure and feel less "floating" */
   height: 200px;
-  object-fit: contain;         /* show full image without forced crop — adds letterboxing if needed */
-  object-position: center top; /* prioritize keeping the top of the head visible */
+  object-fit: contain;             /* shows full photo without forced crop */
+  object-position: center top;     /* prioritizes keeping top of head visible */
   border: 3px solid #e0e0e0;
-  border-radius: 50%;          /* make it fully circular for a cleaner profile look */
-  background: #f8f9fa;         /* subtle background fill if contain leaves gaps */
-  padding: 8px;                /* extra breathing room inside border */
-  transition: box-shadow 0.3s ease, transform 0.25s ease;
+  border-radius: 12px;             /* subtle rounded corners — not full circle */
+  background: var(--light-bg);     /* fill any letterbox gaps with light gray-blue */
+  padding: 8px;                    /* internal padding so it doesn't touch edges */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* gentle drop shadow instead of float */
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+header img:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12); /* stronger shadow on hover — no lift/translate */
+  /* Remove transform: translateY(-3px); to eliminate floating */
 }
     header img:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.14); transform: translateY(-3px); }
     h1 { margin: 0; font-size: 2.4em; color: var(--glasgow-blue-dk); }
