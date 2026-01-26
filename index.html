@@ -61,15 +61,36 @@
     }
     @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
     @keyframes fadeUp { from {opacity:0; transform:translateY(6px);} to {opacity:1; transform:translateY(0);} }
-    header {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      margin-bottom: 48px;
-      background: var(--light-bg);
-      padding: 28px;
-      border-radius: 10px;
-    }
+header {
+  display: flex;
+  align-items: flex-start;       /* better vertical alignment when text is shorter */
+  gap: 32px;
+  margin-bottom: 40px;           /* slightly less bottom margin */
+  background: var(--light-bg);
+  padding: 28px;
+  border-radius: 10px;
+}
+
+header div {
+  flex: 1;                       /* lets text take available space */
+}
+
+header h1 {
+  margin: 0 0 4px 0;             /* tighter spacing below name */
+  font-size: 2.4em;
+  color: var(--glasgow-blue-dk);
+}
+
+header p:first-of-type {
+  font-size: 1.15em;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+header p:nth-of-type(2) {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
 header img {
   width: 200px;                    /* smaller to reduce crop pressure and feel less "floating" */
   height: 200px;
@@ -175,14 +196,12 @@ header img:hover {
   <img src="assets/profile_new.jpg" alt="Ioannis Kalogridis, Lecturer in Statistics and Data Analytics at the University of Glasgow" loading="lazy">
   <div>
     <h1>Ioannis Kalogridis</h1>
-    <p style="font-size:1.1em; margin:8px 0 16px 0;">
+    <p style="font-size:1.15em; margin:8px 0 12px 0; font-weight:500;">
       Lecturer in Statistics and Data Analytics<br>
-      School of Mathematics & Statistics<br>
-      University of Glasgow
+      School of Mathematics & Statistics, University of Glasgow
     </p>
-    <p>
-      Research in functional data analysis, nonparametrics, and robust statistics.<br>
-      PhD 2020, KU Leuven (supervisor: <a href="https://www.kuleuven.be/wieiswie/en/person/00051735" target="_blank" rel="noopener noreferrer">Prof. Stefan Van Aelst</a>)
+    <p style="margin:0 0 12px 0;">
+      Research in functional data analysis, nonparametrics, and robust statistics. PhD 2020, KU Leuven (supervisor: <a href="https://www.kuleuven.be/wieiswie/en/person/00051735" target="_blank" rel="noopener noreferrer">Prof. Stefan Van Aelst</a>).
     </p>
     <p style="margin-top:12px;">
       <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer">University of Glasgow profile →</a>
