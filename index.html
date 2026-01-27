@@ -181,12 +181,18 @@
       text-align: center;
       margin-top: 80px;
       padding-top: 30px;
-      border-top: 2px solid #e0e0e0; /* stronger separator */
+      border-top: 2px solid #e0e0e0;
       color: #555;
       font-size: 0.9em;
     }
     footer p {
       margin: 0;
+    }
+    #research {
+      background: var(--light-bg);
+      padding: 24px;
+      border-radius: 8px;
+      margin-bottom: 56px;
     }
     @media (prefers-color-scheme: dark) {
       body { background: #0f1117; color: #e0e0e0; }
@@ -197,18 +203,34 @@
       nav a { color: #79c0ff; }
       nav a:hover { color: #a5d6ff; border-bottom-color: #79c0ff; }
       .paper-links a { color: #aaa; }
-      #research { background: #161b22; }
+      #research {
+        background: #1e1e2e;          /* lighter dark bg for better contrast */
+        color: #e0e0ff;               /* light blue-white text */
+      }
+      #research li {
+        color: #e0e0ff;
+      }
     }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
     @media (max-width: 768px) {
-      header { flex-direction: column; text-align: center; gap: 20px; }
-      nav a { margin: 0 12px; font-size: 1em; }
-    }
-    #research {
-      background: var(--light-bg);
-      padding: 24px;
-      border-radius: 8px;
-      margin-bottom: 56px;
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+      header img {
+        margin: 0 auto;
+        display: block;
+      }
+      nav a {
+        margin: 0 12px;
+        font-size: 1em;
+      }
+      #research ul {
+        columns: 1 !important;
+        column-gap: 0;
+        padding-left: 20px;
+      }
     }
   </style>
 </head>
@@ -225,7 +247,8 @@
       Research in functional data analysis, nonparametrics, and robust statistics. PhD 2020, KU Leuven (supervisor: <a href="https://www.kuleuven.be/wieiswie/en/person/00051735" target="_blank" rel="noopener noreferrer">Prof. Stefan Van Aelst</a>).
     </p>
     <p style="margin-top:12px;">
-    <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid var(--glasgow-blue);">University of Glasgow profile →</a>    </p>
+      <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid var(--glasgow-blue);">University of Glasgow profile →</a>
+    </p>
   </div>
 </header>
 
@@ -295,10 +318,10 @@
     <li><a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank" rel="noopener noreferrer">Robust-scale-estimation-in-nonparametric-regression</a>: Resistant nonparametric dispersion estimation.</li>
     <li><a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">RobustSpline (Stanislav Nagy)</a>: Robust functional regression with discretely sampled multidimensional predictors.</li>
   </ul>
-<p style="margin-top: 16px;">
-  <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500;">View all repositories on GitHub →</a>
-</p>
-<div class="back-to-top"><a href="#">↑ Back to top</a></div>
+  <p style="margin-top: 16px;">
+    <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500;">View all repositories on GitHub →</a>
+  </p>
+  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
 </section>
 
 <section id="reviewing">
