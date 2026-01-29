@@ -1,6 +1,6 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ioannis Kalogridis | Lecturer in Statistics, University of Glasgow</title>
@@ -23,202 +23,34 @@
   <!-- Structured data (Person schema) -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ioannis Kalogridis",
-  "jobTitle": "Lecturer in Statistics and Data Analytics",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "University of Glasgow",
-    "url": "https://www.gla.ac.uk/"
-  },
-  "url": "https://ioanniskalogridis.github.io/",
-  "sameAs": [
-    "https://scholar.google.com/citations?user=A4KjmhkAAAAJ",
-    "https://github.com/ioanniskalogridis",
-    "https://orcid.org/0000-0002-8581-6564",
-    "https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/"
-  ]
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ioannis Kalogridis",
+    "jobTitle": "Lecturer in Statistics and Data Analytics",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "University of Glasgow",
+      "url": "https://www.gla.ac.uk/"
+    },
+    "url": "https://ioanniskalogridis.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=A4KjmhkAAAAJ",
+      "https://github.com/ioanniskalogridis",
+      "https://orcid.org/0000-0002-8581-6564",
+      "https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/"
+    ]
   }
   </script>
 
   <style>
-<<<<<<< HEAD
-  :root {
-    --glasgow-blue: #0033A0;
-    --glasgow-blue-dk: #00205B;
-    --light-bg: #f8f9fa;
-    --text: #111;
-    --muted: #555;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 920px;
-    margin: 40px auto;
-    line-height: 1.68;
-    color: var(--text);
-    padding: 0 20px;
-    background: #fff;
-  }
-  @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
-  @keyframes fadeUp { from {opacity:0; transform:translateY(6px);} to {opacity:1; transform:translateY(0);} }
-  header {
-    display: flex;
-    align-items: flex-start;
-    gap: 32px;
-    margin-bottom: 40px;
-    background: var(--light-bg);
-    padding: 28px;
-    border-radius: 10px;
-  }
-  header div {
-    flex: 1;
-  }
-  header h1 {
-    margin: 0 0 4px 0;
-    font-size: 2.4em;
-    color: var(--glasgow-blue-dk);
-  }
-  header p:first-of-type {
-    font-size: 1.15em;
-    margin: 0 0 10px 0;
-    font-weight: 500;
-  }
-  header p:nth-of-type(2) {
-    margin: 0 0 12px 0;
-    line-height: 1.5;
-  }
-  header img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    object-position: center top;
-    border: 3px solid #e0e0e0;
-    border-radius: 12px;
-    background: var(--light-bg);
-    padding: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: box-shadow 0.3s ease;
-  }
-  header img:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  }
-  h2 {
-    color: var(--glasgow-blue-dk);
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 8px;
-    margin: 60px 0 28px;
-    font-weight: 600;
-    font-size: 1.9em;
-  }
-  nav {
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 10;
-    text-align: center;
-    margin: 0 0 40px 0;
-    padding: 16px 0;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  nav a {
-    color: var(--glasgow-blue);
-    text-decoration: none;
-    margin: 0 18px;
-    padding: 6px 0;
-    border-bottom: 2px solid transparent;
-    transition: all 0.25s;
-    font-size: 1.05em;
-    font-weight: 500;
-  }
-  nav a:hover, nav a:focus {
-    border-bottom-color: var(--glasgow-blue);
-    color: var(--glasgow-blue-dk);
-  }
-  a {
-    color: var(--glasgow-blue);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: all 0.2s;
-  }
-  a:hover {
-    border-bottom-color: currentColor;
-    opacity: 0.9;
-  }
-  section {
-    margin-bottom: 48px;
-    animation: fadeUp 0.4s ease-out;
-  }
-  ol, ul {
-    margin-left: 20px;
-    padding-left: 0;
-  }
-  li {
-    margin-bottom: 14px;
-    font-size: 0.97em;
-    line-height: 1.6;
-  }
-  .paper-links {
-    white-space: nowrap;
-    font-size: 0.92em;
-    margin-left: 6px;
-    color: var(--muted);
-  }
-  .paper-links a {
-    font-weight: 550;
-    color: #444;
-  }
-  .back-to-top {
-    text-align: right;
-    font-size: 0.9em;
-    margin-top: 20px;
-    color: var(--muted);
-  }
-  .back-to-top a:hover {
-    color: var(--glasgow-blue-dk);
-  }
-  footer {
-    text-align: center;
-    margin-top: 80px;
-    padding-top: 30px;
-    border-top: 2px solid #e0e0e0; /* stronger separator */
-    color: #555;
-    font-size: 0.9em;
-  }
-  footer p {
-    margin: 0;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { background: #0f1117; color: #e0e0e0; }
-    header { background: #161b22; }
-    h1, h2 { color: #8bb9ff; }
-    a { color: #79c0ff; }
-    nav { background: #0f1117; border-bottom-color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
-    nav a { color: #79c0ff; }
-    nav a:hover { color: #a5d6ff; border-bottom-color: #79c0ff; }
-    .paper-links a { color: #aaa; }
-    #research { background: #161b22; }
-  }
-  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
-  @media (max-width: 768px) {
-    header { flex-direction: column; text-align: center; gap: 20px; }
-    nav a { margin: 0 12px; font-size: 1em; }
-  }
-  #research {
-    background: var(--light-bg);
-    padding: 24px;
-    border-radius: 8px;
-    margin-bottom: 56px;
-  }
-=======
     :root {
-      --glasgow-blue: #0033A0;
-      --glasgow-blue-dk: #00205B;
-      --light-bg: #f8f9fa;
-      --text: #111;
-      --muted: #555;
+      --glasgow-blue:     #0033A0;
+      --glasgow-blue-dk:  #00205B;
+      --light-bg:         #f8f9fa;
+      --text:             #111;
+      --muted:            #555;
     }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       max-width: 920px;
@@ -228,8 +60,11 @@
       padding: 0 20px;
       background: #fff;
     }
-    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
-    @keyframes fadeUp { from {opacity:0; transform:translateY(6px);} to {opacity:1; transform:translateY(0);} }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeUp  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Header */
     header {
       display: flex;
       align-items: flex-start;
@@ -239,23 +74,28 @@
       padding: 28px;
       border-radius: 10px;
     }
+
     header div {
       flex: 1;
     }
+
     header h1 {
       margin: 0 0 4px 0;
       font-size: 2.4em;
       color: var(--glasgow-blue-dk);
     }
+
     header p:first-of-type {
       font-size: 1.15em;
       margin: 0 0 10px 0;
       font-weight: 500;
     }
+
     header p:nth-of-type(2) {
       margin: 0 0 12px 0;
       line-height: 1.5;
     }
+
     header img {
       width: 200px;
       height: 200px;
@@ -268,9 +108,12 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: box-shadow 0.3s ease;
     }
+
     header img:hover {
       box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
+
+    /* Headings */
     h2 {
       color: var(--glasgow-blue-dk);
       border-bottom: 2px solid #e0e0e0;
@@ -279,6 +122,8 @@
       font-weight: 600;
       font-size: 1.9em;
     }
+
+    /* Navigation */
     nav {
       position: sticky;
       top: 0;
@@ -290,6 +135,7 @@
       border-bottom: 1px solid #eee;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
     nav a {
       color: var(--glasgow-blue);
       text-decoration: none;
@@ -300,52 +146,67 @@
       font-size: 1.05em;
       font-weight: 500;
     }
-    nav a:hover, nav a:focus {
+
+    nav a:hover,
+    nav a:focus {
       border-bottom-color: var(--glasgow-blue);
       color: var(--glasgow-blue-dk);
     }
+
+    /* General links */
     a {
       color: var(--glasgow-blue);
       text-decoration: none;
       border-bottom: 1px solid transparent;
       transition: all 0.2s;
     }
+
     a:hover {
       border-bottom-color: currentColor;
       opacity: 0.9;
     }
+
+    /* Sections */
     section {
       margin-bottom: 48px;
       animation: fadeUp 0.4s ease-out;
     }
+
     ol, ul {
       margin-left: 20px;
       padding-left: 0;
     }
+
     li {
       margin-bottom: 14px;
       font-size: 0.97em;
       line-height: 1.6;
     }
+
     .paper-links {
       white-space: nowrap;
       font-size: 0.92em;
       margin-left: 6px;
       color: var(--muted);
     }
+
     .paper-links a {
       font-weight: 550;
       color: #444;
     }
+
     .back-to-top {
       text-align: right;
       font-size: 0.9em;
       margin-top: 20px;
       color: var(--muted);
     }
+
     .back-to-top a:hover {
       color: var(--glasgow-blue-dk);
     }
+
+    /* Footer */
     footer {
       text-align: center;
       margin-top: 80px;
@@ -354,33 +215,39 @@
       color: #555;
       font-size: 0.9em;
     }
+
     footer p {
       margin: 0;
     }
+
+    /* Research section */
     #research {
       background: var(--light-bg);
       padding: 24px;
       border-radius: 8px;
       margin-bottom: 56px;
     }
+
+    /* Dark mode */
     @media (prefers-color-scheme: dark) {
-      body { background: #0f1117; color: #e0e0e0; }
-      header { background: #161b22; }
-      h1, h2 { color: #8bb9ff; }
-      a { color: #79c0ff; }
-      nav { background: #0f1117; border-bottom-color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
-      nav a { color: #79c0ff; }
-      nav a:hover { color: #a5d6ff; border-bottom-color: #79c0ff; }
+      body          { background: #0f1117; color: #e0e0e0; }
+      header        { background: #161b22; }
+      h1, h2        { color: #8bb9ff; }
+      a             { color: #79c0ff; }
+      nav           { background: #0f1117; border-bottom-color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+      nav a         { color: #79c0ff; }
+      nav a:hover   { color: #a5d6ff; border-bottom-color: #79c0ff; }
       .paper-links a { color: #aaa; }
-      #research {
-        background: #1e1e2e;          /* lighter dark bg for better contrast */
-        color: #e0e0ff;               /* light blue-white text */
-      }
-      #research li {
-        color: #e0e0ff;
-      }
+      #research     { background: #1e1e2e; color: #e0e0ff; }
+      #research li  { color: #e0e0ff; }
     }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+
+    /* Mobile adjustments */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -391,193 +258,153 @@
         margin: 0 auto;
         display: block;
       }
+      nav {
+        padding: 12px 0;
+        margin-bottom: 32px;
+      }
       nav a {
-        margin: 0 12px;
+        display: inline-block;
+        margin: 8px 16px;
         font-size: 1em;
+        padding: 6px 0;
       }
       #research ul {
         columns: 1 !important;
         column-gap: 0;
         padding-left: 20px;
+        margin: 0;
       }
     }
-    @media (max-width: 768px) {
-  nav {
-    padding: 12px 0;                /* less top/bottom padding */
-    margin-bottom: 32px;            /* more breathing room below nav */
-  }
-  nav a {
-    display: inline-block;          /* allows wrapping without awkward gaps */
-    margin: 8px 16px;               /* generous horizontal space + vertical when wrapped */
-    font-size: 1em;
-    padding: 6px 0;
-  }
-}
-    @media (max-width: 768px) {
-  #research ul {
-    columns: 1 !important;          /* force single column */
-    column-gap: 0;
-    padding-left: 20px;             /* standard bullet indent */
-    margin: 0;
-  }
-}
->>>>>>> 71f564d47a65a80ebc1d18a46f2fee63443f9438
   </style>
-  </head>
-  <body>
+</head>
+<body>
   <header>
-  <img src="assets/profile_new.jpg" alt="Ioannis Kalogridis, Lecturer in Statistics and Data Analytics at the University of Glasgow" loading="lazy">
-  <div>
-<<<<<<< HEAD
-  <h1>Ioannis Kalogridis</h1>
-  <p style="font-size:1.15em; margin:8px 0 12px 0; font-weight:500;">
-    Lecturer in Statistics and Data Analytics<br>
-    School of Mathematics & Statistics, University of Glasgow
-  </p>
-  <p style="margin:0 0 12px 0;">
-    Research in functional data analysis, nonparametrics, and robust statistics. PhD 2020, KU Leuven (supervisor: <a href="https://www.kuleuven.be/wieiswie/en/person/00051735" target="_blank" rel="noopener noreferrer">Prof. Stefan Van Aelst</a>).
-  </p>
-  <p style="margin-top:12px;">
-  <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid var(--glasgow-blue);">University of Glasgow profile →</a>    </p>
-=======
-    <h1>Ioannis Kalogridis</h1>
-    <p style="font-size:1.15em; margin:8px 0 12px 0; font-weight:500;">
-      Lecturer in Statistics and Data Analytics<br>
-      School of Mathematics & Statistics, University of Glasgow
-    </p>
-    <p style="margin:0 0 12px 0;">
-      Research in functional data analysis, nonparametrics, and robust statistics. PhD 2020, KU Leuven (supervisor: <a href="https://www.kuleuven.be/wieiswie/en/person/00051735" target="_blank" rel="noopener noreferrer">Prof. Stefan Van Aelst</a>).
-    </p>
-    <p style="margin-top:12px;">
-      <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid var(--glasgow-blue);">University of Glasgow profile →</a>
-    </p>
->>>>>>> 71f564d47a65a80ebc1d18a46f2fee63443f9438
-  </div>
+    <img src="assets/profile_new.jpg" alt="Ioannis Kalogridis, Lecturer in Statistics and Data Analytics at the University of Glasgow" loading="lazy">
+    <div>
+      <h1>Ioannis Kalogridis</h1>
+      <p style="font-size:1.15em; margin:8px 0 12px 0; font-weight:500;">
+        Lecturer in Statistics and Data Analytics<br>
+        School of Mathematics & Statistics, University of Glasgow
+      </p>
+      <p style="margin:0 0 12px 0;">
+        Research in functional data analysis, nonparametrics, and robust statistics. PhD 2020, KU Leuven (supervisor: <a href="https://www.kuleuven.be/wieiswie/en/person/00051735" target="_blank" rel="noopener noreferrer">Prof. Stefan Van Aelst</a>).
+      </p>
+      <p style="margin-top:12px;">
+        <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid var(--glasgow-blue);">University of Glasgow profile →</a>
+      </p>
+    </div>
   </header>
 
   <nav>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#preprints">Preprints</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#software">Software</a>
-  <a href="#reviewing">Reviewing</a>
-  <a href="#contact">Contact</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#preprints">Preprints</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#software">Software</a>
+    <a href="#reviewing">Reviewing</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section id="research">
-  <h2>Research Interests</h2>
-  <ul style="columns: 2; column-gap: 40px; padding-left: 20px; margin: 0;">
-  <li>Functional data analysis</li>
-  <li>Nonparametric and semi-parametric methods</li>
-  <li>Robust statistics</li>
-  <li>Computational statistics</li>
-  </ul>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Research Interests</h2>
+    <ul style="columns: 2; column-gap: 40px; padding-left: 20px; margin: 0;">
+      <li>Functional data analysis</li>
+      <li>Nonparametric and semi-parametric methods</li>
+      <li>Robust statistics</li>
+      <li>Computational statistics</li>
+    </ul>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
 
   <section id="publications">
-  <h2>Publications</h2>
-  <ol>
-  <li>Kalogridis, I. and Nagy, S. (2025). <strong>Robust functional regression with discretely sampled predictors</strong>. <em>Computational Statistics & Data Analysis</em>, to appear. DOI: <a href="https://doi.org/10.1016/j.csda.2025.108308" target="_blank" rel="noopener noreferrer" title="DOI: 10.1016/j.csda.2025.108308">10.1016/j.csda.2025.108308</a>
-    <span class="paper-links">[<a href="https://www.sciencedirect.com/science/article/pii/S0167947325001847" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">code</a>]</span>
-  </li>
-  <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Robust penalized splines for location estimation from discretely sampled functional data</strong>. In <em>International Workshop on Functional and Operatorial Statistics (IWFOS 2025)</em>, pp. 267–275. DOI: <a href="https://doi.org/10.1007/978-3-031-92383-8_33" target="_blank" rel="noopener noreferrer" title="DOI: 10.1007/978-3-031-92383-8_33">10.1007/978-3-031-92383-8_33</a>
-    <span class="paper-links">[<a href="https://link.springer.com/book/10.1007/978-3-031-92383-8" target="_blank" rel="noopener noreferrer">paper</a>]</span>
-  </li>
-  <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Resistant dispersion estimation for nonparametric regression</strong>. <em>TEST</em>, 34, 660–690. DOI: <a href="https://doi.org/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer" title="DOI: 10.1007/s11749-025-00974-w">10.1007/s11749-025-00974-w</a>
-    <span class="paper-links">[<a href="https://link.springer.com/article/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank" rel="noopener noreferrer">code</a>]</span>
-  </li>
-  </ol>
-  <p style="font-size:0.95em; color:var(--muted);">Full list available on <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer">University profile</a> and <a href="https://scholar.google.com/citations?user=A4KjmhkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Publications</h2>
+    <ol>
+      <li>Kalogridis, I. and Nagy, S. (2025). <strong>Robust functional regression with discretely sampled predictors</strong>. <em>Computational Statistics & Data Analysis</em>, to appear. DOI: <a href="https://doi.org/10.1016/j.csda.2025.108308" target="_blank" rel="noopener noreferrer" title="DOI: 10.1016/j.csda.2025.108308">10.1016/j.csda.2025.108308</a>
+        <span class="paper-links">[<a href="https://www.sciencedirect.com/science/article/pii/S0167947325001847" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">code</a>]</span>
+      </li>
+      <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Robust penalized splines for location estimation from discretely sampled functional data</strong>. In <em>International Workshop on Functional and Operatorial Statistics (IWFOS 2025)</em>, pp. 267–275. DOI: <a href="https://doi.org/10.1007/978-3-031-92383-8_33" target="_blank" rel="noopener noreferrer" title="DOI: 10.1007/978-3-031-92383-8_33">10.1007/978-3-031-92383-8_33</a>
+        <span class="paper-links">[<a href="https://link.springer.com/book/10.1007/978-3-031-92383-8" target="_blank" rel="noopener noreferrer">paper</a>]</span>
+      </li>
+      <li>Kalogridis, I. and Van Aelst, S. (2025). <strong>Resistant dispersion estimation for nonparametric regression</strong>. <em>TEST</em>, 34, 660–690. DOI: <a href="https://doi.org/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer" title="DOI: 10.1007/s11749-025-00974-w">10.1007/s11749-025-00974-w</a>
+        <span class="paper-links">[<a href="https://link.springer.com/article/10.1007/s11749-025-00974-w" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank" rel="noopener noreferrer">code</a>]</span>
+      </li>
+    </ol>
+    <p style="font-size:0.95em; color:var(--muted);">Full list available on <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer">University profile</a> and <a href="https://scholar.google.com/citations?user=A4KjmhkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
 
   <section id="preprints">
-  <h2>Preprints</h2>
-  <ol>
-  <li>Kalogridis, I. (2025). <strong>Penalized Spline M-Estimators for Discretely Sampled Functional Data: Existence and Asymptotics</strong>, under review.
-    <span class="paper-links">[<a href="https://arxiv.org/abs/2508.12000" target="_blank" rel="noopener noreferrer">arxiv</a> | <a href="https://github.com/ioanniskalogridis/Robust-Functional-Location-Estimation" target="_blank" rel="noopener noreferrer">code</a>]</span>
-  </li>
-  </ol>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Preprints</h2>
+    <ol>
+      <li>Kalogridis, I. (2025). <strong>Penalized Spline M-Estimators for Discretely Sampled Functional Data: Existence and Asymptotics</strong>, under review.
+        <span class="paper-links">[<a href="https://arxiv.org/abs/2508.12000" target="_blank" rel="noopener noreferrer">arxiv</a> | <a href="https://github.com/ioanniskalogridis/Robust-Functional-Location-Estimation" target="_blank" rel="noopener noreferrer">code</a>]</span>
+      </li>
+    </ol>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
 
   <section id="teaching">
-  <h2>Teaching</h2>
-  <p>Currently (2025–2026 academic year):</p>
-  <ul>
-  <li>Inference (Level H)</li>
-  <li>R-Programming (Online Distance Learning)</li>
-  </ul>
-  <p>I also manage and supervise MSc dissertations in Statistics and Data Analytics.</p>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Teaching</h2>
+    <p>Currently (2025–2026 academic year):</p>
+    <ul>
+      <li>Inference (Level H)</li>
+      <li>R-Programming (Online Distance Learning)</li>
+    </ul>
+    <p>I also manage and supervise MSc dissertations in Statistics and Data Analytics.</p>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
 
   <section id="software">
-  <h2>Software & Code</h2>
-  <ul>
-  <li><a href="https://github.com/ioanniskalogridis/Robust-Functional-Location-Estimation" target="_blank" rel="noopener noreferrer">Robust-Functional-Location-Estimation</a>: Penalized spline location M-estimators for discretely sampled functional data.</li>
-  <li><a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank" rel="noopener noreferrer">Robust-scale-estimation-in-nonparametric-regression</a>: Resistant nonparametric dispersion estimation.</li>
-  <li><a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">RobustSpline (Stanislav Nagy)</a>: Robust functional regression with discretely sampled multidimensional predictors.</li>
-  </ul>
-  <p style="margin-top: 16px;">
-<<<<<<< HEAD
-  <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500;">View all repositories on GitHub →</a>
-  </p>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Software & Code</h2>
+    <ul>
+      <li><a href="https://github.com/ioanniskalogridis/Robust-Functional-Location-Estimation" target="_blank" rel="noopener noreferrer">Robust-Functional-Location-Estimation</a>: Penalized spline location M-estimators for discretely sampled functional data.</li>
+      <li><a href="https://github.com/ioanniskalogridis/Robust-scale-estimation-in-nonparametric-regression" target="_blank" rel="noopener noreferrer">Robust-scale-estimation-in-nonparametric-regression</a>: Resistant nonparametric dispersion estimation.</li>
+      <li><a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">RobustSpline (Stanislav Nagy)</a>: Robust functional regression with discretely sampled multidimensional predictors.</li>
+    </ul>
+    <p style="margin-top: 16px;">
+      <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500;">View all repositories on GitHub →</a>
+    </p>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
-=======
-    <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500;">View all repositories on GitHub →</a>
-  </p>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
-</section>
->>>>>>> 71f564d47a65a80ebc1d18a46f2fee63443f9438
 
   <section id="reviewing">
-  <h2>Peer Review & Editorial Work</h2>
-  <p>I regularly review for major journals including:</p>
-  <ul>
-  <li>Journal of the American Statistical Association</li>
-  <li>Bernoulli</li>
-  <li>Journal of Computational and Graphical Statistics</li>
-  <li>Computational Statistics and Data Analysis</li>
-  <li>TEST</li>
-  <li>Econometrics and Statistics</li>
-  </ul>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Peer Review & Editorial Work</h2>
+    <p>I regularly review for major journals including:</p>
+    <ul>
+      <li>Journal of the American Statistical Association</li>
+      <li>Bernoulli</li>
+      <li>Journal of Computational and Graphical Statistics</li>
+      <li>Computational Statistics and Data Analysis</li>
+      <li>TEST</li>
+      <li>Econometrics and Statistics</li>
+    </ul>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
 
   <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:ioannis.kalogridis@glasgow.ac.uk">ioannis.kalogridis@glasgow.ac.uk</a></p>
-  <p>
-  <a href="https://scholar.google.com/citations?user=A4KjmhkAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar profile">Google Scholar</a> |
-  <a href="https://orcid.org/0000-0002-8581-6564" target="_blank" rel="noopener noreferrer" title="ORCID iD">ORCID</a> |
-  <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=319767" target="_blank" rel="noopener noreferrer" title="Mathematics Genealogy Project">Mathematics Genealogy</a>
-  </p>
-  <div class="back-to-top"><a href="#">↑ Back to top</a></div>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ioannis.kalogridis@glasgow.ac.uk">ioannis.kalogridis@glasgow.ac.uk</a></p>
+    <p>
+      <a href="https://scholar.google.com/citations?user=A4KjmhkAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar profile">Google Scholar</a> |
+      <a href="https://orcid.org/0000-0002-8581-6564" target="_blank" rel="noopener noreferrer" title="ORCID iD">ORCID</a> |
+      <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=319767" target="_blank" rel="noopener noreferrer" title="Mathematics Genealogy Project">Mathematics Genealogy</a>
+    </p>
+    <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
 
   <footer>
-  <p>
-  <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer">University of Glasgow</a> •
-  Last updated: <span id="last-updated"></span>
-  </p>
+    <p>
+      <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/ioanniskalogridis/" target="_blank" rel="noopener noreferrer">University of Glasgow</a> •
+      Last updated: <span id="last-updated"></span>
+    </p>
 
-  <script>
-  const now = new Date();
-  document.getElementById('last-updated').textContent = now.toLocaleDateString('en-GB', {
-    month: 'long',
-    year: 'numeric'
-  });
-  </script>
+    <script>
+      const now = new Date();
+      document.getElementById('last-updated').textContent = now.toLocaleDateString('en-GB', {
+        month: 'long',
+        year: 'numeric'
+      });
+    </script>
   </footer>
-
-<<<<<<< HEAD
-  </body>
-  </html>
-=======
 </body>
 </html>
->>>>>>> 71f564d47a65a80ebc1d18a46f2fee63443f9438
