@@ -16,8 +16,17 @@
   <meta name="google-site-verification" content="google02725ee5dd22721c.html">
 
   <!-- SEO meta -->
-  <meta name="description" content="Ioannis Kalogridis is a Lecturer in Statistics and Data Analytics at the University of Glasgow. Research focuses on functional data analysis, nonparametric methods, and robust statistics.">
+  <meta name="description" content="Ioannis Kalogridis – Lecturer in Statistics and Data Analytics at the University of Glasgow. Research in functional data analysis, nonparametric methods, and robust statistics. PhD 2020, KU Leuven.">
   <meta name="keywords" content="Ioannis Kalogridis, statistics, functional data analysis, robust statistics, nonparametric statistics, University of Glasgow">
+
+  <!-- Open Graph / Twitter Card – beautiful sharing previews -->
+  <meta property="og:title" content="Ioannis Kalogridis | Lecturer in Statistics, University of Glasgow">
+  <meta property="og:description" content="Research in functional data analysis, nonparametric methods, and robust statistics. PhD 2020, KU Leuven.">
+  <meta property="og:image" content="https://ioanniskalogridis.github.io/assets/profile_new.jpg">
+  <meta property="og:url" content="https://ioanniskalogridis.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Author -->
   <meta name="author" content="Ioannis Kalogridis">
 
   <!-- Structured data (Person schema) -->
@@ -64,7 +73,7 @@
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes fadeUp  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* Header */
+    /* === Header === */
     header {
       display: flex;
       align-items: flex-start;
@@ -113,7 +122,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 
-    /* Headings */
+    /* === Headings === */
     h2 {
       color: var(--glasgow-blue-dk);
       border-bottom: 2px solid #e0e0e0;
@@ -123,7 +132,7 @@
       font-size: 1.9em;
     }
 
-    /* Navigation */
+    /* === Navigation === */
     nav {
       position: sticky;
       top: 0;
@@ -151,9 +160,12 @@
     nav a:focus {
       border-bottom-color: var(--glasgow-blue);
       color: var(--glasgow-blue-dk);
+      background: rgba(0, 51, 160, 0.08);
+      border-radius: 4px;
+      padding: 6px 10px;
     }
 
-    /* General links */
+    /* === General links === */
     a {
       color: var(--glasgow-blue);
       text-decoration: none;
@@ -166,7 +178,7 @@
       opacity: 0.9;
     }
 
-    /* Sections */
+    /* === Sections === */
     section {
       margin-bottom: 48px;
       animation: fadeUp 0.4s ease-out;
@@ -206,7 +218,7 @@
       color: var(--glasgow-blue-dk);
     }
 
-    /* Footer */
+    /* === Footer === */
     footer {
       text-align: center;
       margin-top: 80px;
@@ -220,7 +232,7 @@
       margin: 0;
     }
 
-    /* Research section */
+    /* === Research section === */
     #research {
       background: var(--light-bg);
       padding: 24px;
@@ -228,7 +240,13 @@
       margin-bottom: 56px;
     }
 
-    /* Dark mode */
+    /* GitHub button hover (for #software) */
+    #software a:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transform: translateY(-1px);
+    }
+
+    /* === Dark mode === */
     @media (prefers-color-scheme: dark) {
       body          { background: #0f1117; color: #e0e0e0; }
       header        { background: #161b22; }
@@ -236,18 +254,18 @@
       a             { color: #79c0ff; }
       nav           { background: #0f1117; border-bottom-color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
       nav a         { color: #79c0ff; }
-      nav a:hover   { color: #a5d6ff; border-bottom-color: #79c0ff; }
+      nav a:hover   { color: #a5d6ff; border-bottom-color: #79c0ff; background: rgba(121, 192, 255, 0.15); }
       .paper-links a { color: #aaa; }
       #research     { background: #1e1e2e; color: #e0e0ff; }
       #research li  { color: #e0e0ff; }
     }
 
-    /* Reduced motion */
+    /* === Reduced motion === */
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; transition: none !important; }
     }
 
-    /* Mobile adjustments */
+    /* === Mobile adjustments === */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -255,7 +273,10 @@
         gap: 20px;
       }
       header img {
-        margin: 0 auto;
+        width: 240px;
+        height: 240px;
+        max-width: 90vw;
+        margin: 0 auto 16px auto;
         display: block;
       }
       nav {
@@ -362,7 +383,7 @@
       <li><a href="https://github.com/NagyStanislav/RobustSpline" target="_blank" rel="noopener noreferrer">RobustSpline (Stanislav Nagy)</a>: Robust functional regression with discretely sampled multidimensional predictors.</li>
     </ul>
     <p style="margin-top: 16px;">
-      <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500;">View all repositories on GitHub →</a>
+      <a href="https://github.com/ioanniskalogridis" target="_blank" rel="noopener noreferrer" style="background: var(--glasgow-blue); color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.12); transition: all 0.2s;">View all repositories on GitHub →</a>
     </p>
     <div class="back-to-top"><a href="#">↑ Back to top</a></div>
   </section>
