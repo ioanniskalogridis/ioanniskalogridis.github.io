@@ -61,6 +61,26 @@
       --muted:            #555;
     }
 
+    html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.back-to-top a:focus-visible {
+  outline: 2px solid var(--glasgow-blue);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--glasgow-blue);
+  outline-offset: 2px;
+}
+
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       max-width: 920px;
@@ -345,16 +365,16 @@
     </div>
   </header>
 
-  <nav>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <!-- <a href="#preprints">Preprints</a> → removed, no current preprints -->
-    <a href="#teaching">Teaching</a>
-    <a href="#software">Software</a>
-    <a href="#reviewing">Reviewing</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+<nav>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#preprints">Preprints</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#software">Software</a>
+  <a href="#reviewing">Reviewing</a>
+  <a href="#contact">Contact</a>
+</nav>
+  
   <section id="research">
     <h2>Research Interests</h2>
     <ul style="columns: 2; column-gap: 40px; padding-left: 20px; margin: 0;">
@@ -391,10 +411,11 @@
 
 <section id="preprints">
   <h2>Preprints</h2>
-  <!-- <p>No current preprints.</p> -->
-       <li>Kalogridis, I. (2026). <strong>Generalized nonparametric regression in reproducing kernel Hilbert spaces: Consistency and rates of convergence</strong>.
-        <span class="paper-links">[<a href="https://arxiv.org/abs/2606.22993" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/ioanniskalogridis/Generalized-nonparametric-regression-in-RKHS" target="_blank" rel="noopener noreferrer">code</a>]</span>
-      </li>
+  <ul>
+    <li>Kalogridis, I. (2026). <strong>Generalized nonparametric regression in reproducing kernel Hilbert spaces: Consistency and rates of convergence</strong>.
+      <span class="paper-links">[<a href="https://arxiv.org/abs/2606.22993" target="_blank" rel="noopener noreferrer">paper</a> | <a href="https://github.com/ioanniskalogridis/Generalized-nonparametric-regression-in-RKHS" target="_blank" rel="noopener noreferrer">code</a>]</span>
+    </li>
+  </ul>
   <div class="back-to-top"><a href="#">↑ Back to top</a></div>
 </section>
 
