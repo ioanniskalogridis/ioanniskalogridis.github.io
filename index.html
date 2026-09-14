@@ -135,7 +135,7 @@
     header .profile-link {
       margin-top: 12px;
     }
-
+<!--
 header img {
   width: 250px;
   height: 250px;
@@ -145,6 +145,19 @@ header img {
   border-radius: 12px;
   background: var(--light-bg);
   padding: 0px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+-->
+    header img {
+  width: 200px;
+  height: 260px;      /* portrait ratio instead of square, matches your photo's shape */
+  object-fit: cover;   /* now safe — closer aspect match means minimal cropping */
+  object-position: center 30%;  /* keeps some headroom, avoids the jaw-cut issue */
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  background: var(--light-bg);
+  padding: 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: box-shadow 0.3s ease;
 }
